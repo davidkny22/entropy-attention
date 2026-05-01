@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# macOS
+.DS_Store
+
+# Local artifacts
+.claude/
+*.lock
+superpowers/
+AGENTS.md
+CLAUDE.md
+
+# Internal documents
+docs/specs/
+
+# Data outputs (keep sources, ignore generated)
+*.json
+*.csv
+runs/
+outputs/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.venv/
+venv/
+env/
+.env
+
+# MLX / training checkpoints
+checkpoints/
+*.npz
+*.safetensors
