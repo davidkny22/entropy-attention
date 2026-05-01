@@ -141,8 +141,6 @@ entropy-attention/
   docs/
     results/
       experiment-log.md     # Full experiment log: smoke test, quick battery, conclusions
-    specs/
-      2026-04-12-entropy-attention-design.md  # Design specification
 ```
 
 ## Installation
@@ -160,7 +158,7 @@ pip install -e .
 
 ## Related Work
 
-Attention entropy has been studied as a training diagnostic—[Zhai et al. (2023)](https://arxiv.org/abs/2303.09417) showed that entropy collapse correlates with training instability, and [Varre, Rofin & Flammarion (2026)](https://arxiv.org/abs/2603.06248) proved that gradient flow drives softmax outputs toward low-entropy solutions. Learned temperature in attention has been explored by [Vasylenko et al. (2026)](https://arxiv.org/abs/2506.00590) (ASEntmax) and [Zhang et al. (2024)](https://arxiv.org/abs/2411.12892) (Selective Self-Attention), while [Lee, Lee & Song (2022)](https://arxiv.org/abs/2112.13492) showed that Vision Transformers consistently learn lower-than-standard temperatures. Information-theoretic regularizers such as negative entropy have been used to induce sparse or diverse attention ([Sun et al., 2021](https://arxiv.org/abs/2112.07688); [Martins, Niculae & McNamee, 2023](https://arxiv.org/abs/2304.12810)). [Agarwal, Dalal & Misra (2025)](https://arxiv.org/abs/2512.22471) showed that transformer attention implements Bayesian inference via a value manifold parameterized by posterior entropy. The explore/exploit framing has appeared in attention budgeting ([Faye et al., 2026](https://arxiv.org/abs/2604.22583)) and in-context bandit learning ([Dai, Tomasi & Ghiassian, 2024](https://arxiv.org/abs/2403.06826)), but not as a two-phase mechanism driven by value entropy.
+Attention entropy has been studied as a training diagnostic—[Zhai et al. (2023)](https://arxiv.org/abs/2303.09417) showed that entropy collapse correlates with training instability, and [Varre, Rofin & Flammarion (2026)](https://arxiv.org/abs/2603.06248) proved that gradient flow drives softmax outputs toward low-entropy solutions. Learned temperature in attention has been explored by [Vasylenko et al. (2026)](https://arxiv.org/abs/2506.00590) (ASEntmax) and [Zhang et al. (2024)](https://arxiv.org/abs/2411.12892) (Selective Self-Attention), while [Lee, Lee & Song (2022)](https://arxiv.org/abs/2112.13492) showed that Vision Transformers consistently learn lower-than-standard temperatures. Information-theoretic regularizers such as negative entropy have been used to induce sparse or diverse attention ([Sun et al., 2021](https://arxiv.org/abs/2112.07688); [Martins, Niculae & McNamee, 2023](https://arxiv.org/abs/2304.12810)). [Agarwal, Dalal & Misra (2025)](https://arxiv.org/abs/2512.22471) showed that transformer attention implements Bayesian inference via a value manifold parameterized by posterior entropy. The explore/exploit framing has appeared in attention budgeting ([Faye et al., 2026](https://arxiv.org/abs/2604.22583)) and in-context bandit learning ([Dai, Tomasi & Ghiassian, 2024](https://arxiv.org/abs/2403.06826)), but to my knowledge, not as a two-phase mechanism driven by value entropy.
 
 ## License
 
